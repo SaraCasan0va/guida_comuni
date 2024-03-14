@@ -71,17 +71,17 @@ attivati automaticamente.
 Per selezionare l'ambiente dove si intende operare seguire i seguenti
 passi:
 
-1.  Effettuare il login con le credenziali SPID o CIE
+1.1 Effettuare il login con le credenziali SPID o CIE
 
-2.  Selezionare l\'ente per il quale sto operando
+2.2 Selezionare l\'ente per il quale sto operando
 
-3.  Selezionare il prodotto "*Interoperabilità*"
+1.3 Selezionare il prodotto "*Interoperabilità*"
 
-4.  Successivamente alla selezione del prodotto, comparirà una schermata
+1.4 Successivamente alla selezione del prodotto, comparirà una schermata
     dove viene chiesto se si intende operare sull\'ambiente di collaudo
     o produzione
 
-5.  Selezionare l'ambiente desiderato
+1.5  Selezionare l'ambiente desiderato
 
 Gli ambienti di collaudo vanno sempre mantenuti attivi, per permettere
 sia all\'ente, che ai fruitori, di effettuare test sull\'API, prima di
@@ -95,12 +95,12 @@ ambiente di collaudo che in ambiente di produzione.*
 *NB: La modifica dei contatti è possibile per i soli utenti che
 possiedono il ruolo di amministrazione della piattaforma.*
 
-1.  Una volta scelto l'ambiente in cui intendi operare, dal menu di
+2.1 Una volta scelto l'ambiente in cui intendi operare, dal menu di
     sinistra seleziona **il tuo ente** \> **anagrafica e attributi.**
     Successivamente clicca su **modifica** nella sezione
     contatti![](./media/image1.png "2.1")
 
-2.  inserisci una mail di contatto diretto dell'utente che gestisce la
+2.2 Inserisci una mail di contatto diretto dell'utente che gestisce la
     piattaforma per conto del comune.
 
 > ![Immagine che contiene testo, software, schermata, Icona del computer
@@ -112,7 +112,7 @@ possiedono il ruolo di amministrazione della piattaforma.*
 > contatto diretto dell'utente amministratore della piattaforma,
 > evitando di inserire PEC o indirizzi di posta poco monitorati.*
 
-3.  []{#Segnalibro1 .anchor}**Preparazione del file .yaml**
+2.3  []{#Segnalibro1 .anchor}**Preparazione del file .yaml**
 
 Il file api-comuni.yaml andrà personalizzato secondo quanto scelto
 dall\'ente.
@@ -133,12 +133,12 @@ In particolare:
 > *NB: seguenti passaggi devono essere ripetuti sia in ambiente di
 > collaudo che in ambiente di produzione.*
 
-1.  Seleziona **Erogazione** \> **I tuoi e-service** e clicca il
+4.1 Seleziona **Erogazione** \> **I tuoi e-service** e clicca il
     pulsante **"+1 Crea Nuovo"** per avviare il processo di creazione di
     un nuovo e-service.
     ![](./media/image3.png)
 
-2.  Allo step **Generale** inserisci nome e descrizione come da esempio,
+4.2 Allo step **Generale** inserisci nome e descrizione come da esempio,
     poi continua con **Salva bozza e prosegui**![Immagine che contiene
     testo, schermata, software, Pagina Web Descrizione generata
     automaticamente](./media/image4.png)
@@ -150,7 +150,7 @@ In particolare:
 > Sociali, tramite la fruizione da parte di INPS attraverso Web API,
 > tipologia REST.
 
-3.  Allo step **Versione** inserisci i dati dei campi obbligatori,
+4.3 Allo step **Versione** inserisci i dati dei campi obbligatori,
     lasciando come di default (non selezionata) l'attivazione manuale.
     Poi continua con **Salva bozza e prosegui**
 
@@ -169,7 +169,7 @@ In particolare:
 >
 > <ins>Audience:</ins> SIUSS
 
-4.  Allo step **Attributi** vanno indicati gli attributi che il fruitore
+4.4 Allo step **Attributi** vanno indicati gli attributi che il fruitore
     deve possedere per richiedere la fruizione dell'e-service. In questo
     caso dovrà essere inserito un attributo certificato specifico per il
     fruitore INPS, in quanto solo l'istituto potrà usufruire del
@@ -180,18 +180,18 @@ In particolare:
 > Descrizione generata
 > automaticamente](./media/image6.png)
 
-5.  Seleziona "**+ Aggiungi requisito**", digita nel campo di ricerca
+4.5 Seleziona "**+ Aggiungi requisito**", digita nel campo di ricerca
     "INPS" e seleziona **"Istituto Nazionale Previdenza Sociale -
     INPS"**![Immagine che contiene testo, software, schermata, Icona del
     computer Descrizione generata
     automaticamente](./media/image7.png)
 
-6.  Clicca su **Aggiungi requisito** per confermare la
+4.6 Clicca su **Aggiungi requisito** per confermare la
     selezione![Immagine che contiene testo, software, Icona del
     computer, Pagina Web Descrizione generata
     automaticamente](./media/image8.png)
 
-7.  Se l'attributo è stato selezionato correttamente, comparirà tra gli
+4.7 Se l'attributo è stato selezionato correttamente, comparirà tra gli
     attributi certificati, come da esempio seguente. A questo punto
     clicca "**Salva bozza e prosegui**"
 
@@ -199,7 +199,7 @@ In particolare:
 > Web Descrizione generata
 > automaticamente](./media/image9.png)
 
-8.  L'ultimo step è dedicato alla **Documentazione** relativa
+4.8 L'ultimo step è dedicato alla **Documentazione** relativa
     all'e-service: qui è necessario caricare il file .yaml con la
     specifica API, scaricato dal repository Github di INPS e
     opportunamente aggiornato [come da punto 3](#Segnalibro1). Se
@@ -209,12 +209,12 @@ In particolare:
 > Descrizione generata
 > automaticamente](./media/image10.png)
 
-9.  Clicca **Vai al riepilogo** e, dopo aver visualizzato il riepilogo,
+4.9 Clicca **Vai al riepilogo** e, dopo aver visualizzato il riepilogo,
     clicca su **Pubblica**
 
 > ![](./media/image11.png)
 
-10. **Conferma** la pubblicazione dell'e-service: è completato il
+4.10**Conferma** la pubblicazione dell'e-service: è completato il
     processo di pubblicazione in piattaforma ![Immagine che contiene
     testo, schermata, software, Icona del computer Descrizione generata
     automaticamente](./media/image12.png)
